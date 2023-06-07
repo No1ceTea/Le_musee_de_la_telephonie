@@ -95,7 +95,7 @@ html, body {
 }
 
 .play__btn:hover {
-  transform: translate(660px, 0px);
+  transform: translate(640px, 0px);
 }
 
 .play__btn ion-icon {
