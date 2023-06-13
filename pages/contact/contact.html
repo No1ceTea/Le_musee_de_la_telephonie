@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-compatible" content="IE=edge"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="#" type="image/x-icon">
+
+      <!--=============== IONICONS ===============-->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <!--=============== CSS ===============--> 
+      <link rel="stylesheet" href="./styles.css">
+
+      <!--=============== FONT ===============--> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+
+      <title>Le musée de la télephonie</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="nav__logo">
+          <a href="../../index.html">Musée de la télephonie</a>
+        </div>
+        <div class="nav__links">
+          <a href="../aboutus/aboutus.html">About us</a>
+          <a href="./contact.html">Contacts</a>
+        </div>
+      </div>
+
+      <div class="marquee">
+        <span>
+          contactez-nous / contactez-nous / contactez-nous / contactez-nous /
+          contactez-nous / contactez-nous / contactez-nous / contactez-nous /
+          contactez-nous / contactez-nous /
+        </span>
+      </div>
+      <div class="contact-section">
+        <div class="contact-details col">
+          <p>La téléphonie mobile : <br>
+          Un voyage évolutif <br>
+          á ne pas manquer.
+          </p>
+
+          <div class="social-media item">
+            <h3>Social Media</h3>
+            <span>TWITTER - INSTAGRAM - FACEBOOK</span>
+          </div>
+
+          <div class="contact-info">
+            <div class="email item">
+              <h3>EMAIL</h3>
+              <span>CONTACT.MTP@GMAIL.COM</span>
+            </div>
+
+            <div class="address item">
+              <h3>Location</h3>
+              <span>LYON, place des terreaux</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form col">
+          <div class="wrapper">
+            <div class="row">
+              <input type="text" placeholder="Nom" />
+              <input type="text" placeholder="Entreprise" />
+            </div>
+            <div class="row">
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="Budget" />
+            </div>
+            <div class="row">
+              <textarea name="" id="message" placeholder="Message" rows="5"></textarea>
+            </div>
+            <div class="row submit">
+              <a href="#">Envoyer</a>
+              <div class="send-icon">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+          <!--=============== GSAP ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script>
+      gsap.from(".nav__logo, .nav__links > a", 2, {
+        top: "30px",
+        opacity: 0,
+        ease: "power4.inOut",
+        delay: 0.1,
+        stagger: {
+          amount: 0.3,
+        },
+      })
+    </script>
+  </body>
+</html>

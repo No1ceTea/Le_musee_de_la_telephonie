@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
 
     <!--=============== IONICONS ===============-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -15,7 +15,7 @@
     <!--=============== CSS ===============--> 
     <link rel="stylesheet" href="./styles.css">
 
-    <!--=============== CSS ===============--> 
+    <!--=============== FONT ===============--> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
       </div>
       <div class="nav__links">
         <a href="./aboutus.html">About us</a>
-        <a href="#">Contacts</a>
+        <a href="../contact/contact.html">Contacts</a>
       </div>
     </div>
 
@@ -114,8 +114,12 @@
         </div>
       </div>
       <div class="empty-rows">
-        <div class="white-space border-bottom"></div>
-        <div class="white-space"></div>
+        <div class="white-space border-bottom">
+          <img class="img-empty-1" src="../../public/sculpture.png" alt="">
+        </div>
+        <div class="white-space">
+          <img class="img-empty-2" src="../../public/logoV2.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -129,6 +133,16 @@
 <!--=============== GSAP ===============-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script>
+  gsap.from(".nav__logo, .nav__links > a", 2, {
+    top: "30px",
+    opacity: 0,
+    ease: "power4.inOut",
+    delay: 2,
+    stagger: {
+      amount: 0.3,
+    },
+  })
+
   gsap.to(".row-1, .row-2", 1, {
     top: 0,
     ease: "power4-out",
